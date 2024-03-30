@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Sass/BookMng.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="data:image/png;base64,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">
+        <div class="dugmad">
+        <button class="log-in-open" id="log-in-open">Log In</button>
+        <div class="log-in-container"id="log-in-container">
+            <div class="log-in-form">
+                
+                <input type="text" placeholder="Email Address"></input>
+                <input type="text" placeholder="Password"></input>
+                <button class="log-in-close-button"id="log-in-close">Log in</button>
+            </div>
+        </div>
+
+        <button class="sign-up-open" id="sign-up-open">Sign up</button>
+        <div class="sign-up-container"id="sign-up-container">
+        <div class="sign-up-form">
+            <input type="text" placeholder="Name"></input>
+            <input type="text" placeholder="Surname"></input>
+            <input type="text" placeholder="Age"></input>
+            <input type="text" placeholder="Address"></input>
+            <input type="text" placeholder="Email Address"></input>
+            <input type="text" placeholder="Password"></input>
+            <button class="sign-up-close-button"id="sign-up-close">Sign up</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="books" >
+        <div class="menu" id="menu">
+            <div class="title">
+                
+                <img width="64" height="64" src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/external-book-fine-arts-flatart-icons-lineal-color-flatarticons.png" alt=""/>
+                <strong>Book Management <br> App</strong>
+            </div>
+            
+                <button class="dugme" id="add-book">Add new book</button>
+            
+            
+        </div>
+
+
+        <div class="content">
+        <div class="upper">
+           
+                 <input type="text" placeholder="Search..." class="search" id="search">
+           
+           
+            <div class="meniji">
+                <button  id="show-favorites">Show Favorites</button>
+                <select class="padajuci-meni" id="genre-meni">
+                    <option class="sort-by" value="1">Sort by genre:</option>
+                    <option class="opcije" value="2">Romance</option>
+                    <option class="opcije" value="3">Realist Novel</option>
+                    <option class="opcije" value="4">Erotic Novel</option>
+                    <option class="opcije" value="5">Southern Gothic Bildungsroman</option>
+                    
+                </select>
+                <select class="padajuci-meni" id="padajuci-meni">
+                    <option class="sort-by" value="1">Sort by:</option>
+                    <option class="opcije" value="2">Title</option>
+                    <option class="opcije" value="3">Author</option>
+                    <option class="opcije" value="4">Year of publication</option>
+                    <option class="opcije" value="5">Raiting</option>
+                    <option class="opcije" value="6">Number of pages</option>
+                    
+                </select>
+                
+            </div>
+            
+            
+        </div>
+        <div class="book" id="book-list">
+
+        </div>
+    </div>
+       </div>
+
+   
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script defer src="../js/BookMng.js"></script>
+</body>
+</html>
