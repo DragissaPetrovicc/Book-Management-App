@@ -22,18 +22,6 @@ search.addEventListener("input", function () {
     displayBooks(filteredBooks);
 });
 
-function searchBooks(searchTerm) {
-    const filteredBooks = books.filter(book =>
-        book.title.toLowerCase().includes(searchTerm) ||
-        book.author.toLowerCase().includes(searchTerm) ||
-        book.genre.toLowerCase().includes(searchTerm) ||
-        book.year.toString().includes(searchTerm) ||
-        book.pages.toString().includes(searchTerm)
-    );
-    displayBooks(filteredBooks);
-}
-
-
 show_favorites.className = "w-1/3 h-12 bg-white border border-transparent rounded-xl cursor-pointer";
 let showFavorites = false;
 
